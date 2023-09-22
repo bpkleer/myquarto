@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("utils", "file.edit")
+importFrom("rstudioapi", "terminalExecute")
+importFrom("rstudioapi", "terminalExitCode")
+importFrom("rstudioapi", "terminalKill")

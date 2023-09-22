@@ -1,0 +1,60 @@
+---
+title: "Your title"
+subtitle: "Conference / Panel name"
+author: "B. Philipp Kleer"
+institute: "Department of Political Science | Justus-Liebig-University Giessen" 
+date: "Report Last Run: `r Sys.time()`"
+date-format: long
+format:  
+  revealjs: 
+    width: 1600
+    height: 900
+    theme: [default]
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    touch: true
+    menu: false
+    preview-links: auto
+    transition: slide
+    background-transition: fade
+    code-fold: false
+    code-summary: "Click here for Code"  
+    code-link: true
+    code-overflow: wrap
+    highlight-style: atom-one 
+    execute:
+      echo: true
+      eval: false
+      warning: false
+    chalkboard:
+      src: "./assets/drawings.json"
+      buttons: false
+    title-slide-attributes:
+      data-state: "hide-menubar"
+    simplemenu:
+        barhtml:
+            header: "<div class='menubar'><a href='#'></a><ul class='menu'></ul><div>"
+        scale: 0.8
+revealjs-plugins:
+  - simplemenu
+editor: source
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(RColorBrewer)
+library(scales)
+library(beyonce)
+```
+
+# Quarto {data-stack-name="Start"}
+
+Remember this is the first level!
+
+## Second level slide
+
+This is the content level.
